@@ -1,5 +1,5 @@
 let $botao = document.getElementById("button");
-$botao.addEventListener("click", calcula)
+$botao.addEventListener("click", calcula);
 
 function calcula(evt){
     evt.preventDefault();
@@ -7,7 +7,7 @@ function calcula(evt){
     let $num2 = parseFloat(document.getElementById("num2").value.replace(".","."));
     let $ope = document.getElementById("ope").value;
     let $result;
-
+    
     if(isNaN(parseFloat($num1))){
         alert("Inseri apenas valores númericos");
         document.getElementById("num1").value = '';
@@ -55,4 +55,4 @@ function calcula(evt){
             document.getElementById("ope").value = '0';
         }
     }
-}
+};
